@@ -1,0 +1,204 @@
+/* Shared navigation for all three pages */
+.site-nav {
+  background-color: #101b2d;
+  padding: 1rem;
+  text-align: center;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.site-nav a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: #f2b84b;
+}
+
+/* HOME PAGE: fluid layout */
+
+/* Style 1: flexible page width and readable spacing */
+.home-page main {
+  width: 90%;
+  max-width: 62rem;
+  margin: 2rem auto;
+}
+
+/* Style 2: prominent home introduction */
+.home-page .hero {
+  background-color: #172b46;
+  color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 0.8rem;
+}
+
+/* Style 3: accent text */
+.home-page .eyebrow {
+  color: #f2b84b;
+  font-size: 0.9rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+/* Style 4: separate content cards */
+.home-page .content-card {
+  background-color: #ffffff;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-left: 0.35rem solid #d69b35;
+  box-shadow: 0 0.2rem 0.8rem rgba(16, 27, 45, 0.10);
+}
+
+/* Style 5: consistent home page images */
+.home-page img {
+  display: block;
+  width: 100%;
+  max-width: 34rem;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+}
+
+/* Style 6: audio player spacing */
+.home-page audio {
+  width: 100%;
+  max-width: 32rem;
+}
+
+/* RESUME PAGE: fixed-width layout */
+
+/* Style 1: fixed-width resume sheet */
+.resume-page .resume-sheet {
+  width:  min(48rem, 92%);
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border: 1px solid #d5dce5;
+}
+
+/* Style 2: centered resume heading */
+.resume-page .resume-header {
+  text-align: center;
+  border-bottom: 0.2rem solid #d69b35;
+  padding-bottom: 1.5rem;
+}
+
+/* Style 3: resume section headings */
+.resume-page h2 {
+  color: #17365b;
+  border-bottom: 1px solid #c8d2df;
+  padding-bottom: 0.4rem;
+}
+
+/* Style 4: experience and skill lists */
+.resume-page li {
+  margin-bottom: 0.45rem;
+}
+
+/* Style 5: resume image presentation */
+.resume-page img {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 0.4rem;
+}
+
+/* Style 6: resume section spacing */
+.resume-page section {
+  margin: 1.8rem 0;
+}
+
+/* PERSONAL PAGE: fluid layout */
+
+/* Style 1: flexible personal page width */
+.personal-page main {
+  width: 90%;
+  max-width: 65rem;
+  margin: 2rem auto;
+}
+
+/* Style 2: personal page feature heading */
+.personal-page .personal-hero {
+  background-color: #172b46;
+  color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 0.8rem;
+}
+
+/* Style 3: personal topic panels */
+.personal-page .topic-panel {
+  background-color: #ffffff;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d5dce5;
+}
+
+/* Style 4: personal page section headings */
+.personal-page h2 {
+  color: #17365b;
+}
+
+/* Style 5: personal page images */
+.personal-page img {
+  display: block;
+  width: 100%;
+  max-width: 38rem;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+}
+
+/* Style 6: personal page goal list */
+.personal-page li {
+  margin-bottom: 0.6rem;
+}
+
+/* General page and footer styling */
+body {
+  margin: 0;
+  background-color: #eef2f6;
+  color: #243247;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  line-height: 1.2;
+}
+
+footer {
+  background-color: #101b2d;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Keep layouts readable on smaller screens */
+@media (max-width: 600px) {
+  .site-nav li {
+    margin: 0 0.4rem;
+  }
+
+  .home-page .hero,
+  .personal-page .personal-hero {
+    padding: 1.3rem;
+  }
+
+  .resume-page .resume-sheet {
+    padding: 1.2rem;
+  }
+}
