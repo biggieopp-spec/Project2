@@ -1,9 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Project Three</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jayven Reynolds — music, creativity, and information technology.">
+  <title>Jayven Reynolds | Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
-    <h1>Project Three</h1>
+<body class="home-page">
+<nav class="site-nav" aria-label="Main navigation">
+  <a class="brand" href="index.html">JR<span>.</span></a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+  <ul id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="page3.html">Personal</a></li>
+    <li><a href="map.html">Map</a></li>
+  </ul>
+</nav>
+<main class="page-shell">
+  <header class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Music • Creativity • Technology</p>
+      <h1>Music and<br><span>Data Architecture</span></h1>
+      <p>Welcome to my personal website. My interests combine music, creativity, business, and technology. I am currently studying Business and Information Technology Management and I am interested in building a future career in data architecture while continuing to develop as a musician.</p>
+      <a class="text-link" href="page3.html">Explore my interests <span aria-hidden="true">→</span></a>
+    </div>
+    <img class="hero-image" src="images/jayven-recording.jpg" alt="Jayven recording music in a studio while wearing headphones">
+  </header>
+
+  <section class="content-card">
+    <p class="eyebrow">01 / Creative side</p>
+    <h2>My Interest in Music</h2>
+    <p>Music is an important creative outlet for me. Writing, recording, producing, and learning how music is made all require creativity and attention to detail. I enjoy the process of turning an idea into something that other people can hear.</p>
+  </section>
+
+  <section class="content-card">
+    <p class="eyebrow">02 / Technical side</p>
+    <h2>My Interest in Data</h2>
+    <p>Data architecture interests me because organizations depend on information to make decisions. Data architecture involves planning how information is organized, stored, connected, and made available to the people and systems that need it.</p>
+  </section>
+
+  <section class="content-card">
+    <p class="eyebrow">03 / Where they connect</p>
+    <h2>Music and Technology</h2>
+    <p>Music and technology are closely connected. Artists use computers and digital audio software to record, edit, mix, and distribute music. Streaming platforms also depend on data to organize music catalogs and understand how listeners interact with songs.</p>
+  </section>
+
+  <section class="content-card audio-card">
+    <p class="eyebrow">Listen</p>
+    <h2>Selected Audio</h2>
+    <p>Listen to the beat I selected for the media portion of this website.</p>
+    <audio controls preload="metadata">
+      <source src="media/backstreet-160-shaax-freezy.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section class="content-card">
+    <p class="eyebrow">Looking ahead</p>
+    <h2>My Future</h2>
+    <p>My goal is to keep improving my technical skills while continuing to develop creatively. A future career involving data architecture could give me a strong technology career, while music can remain an important part of my creative life.</p>
+    <a class="text-link" href="resume.html">View my resume <span aria-hidden="true">→</span></a>
+  </section>
+</main>
+<footer><p>Jayven Reynolds <span aria-hidden="true">|</span> Music and Technology</p></footer>
 </body>
 </html>

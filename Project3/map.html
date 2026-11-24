@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jayven Reynolds — music, creativity, and information technology.">
+  <title>Jayven Reynolds | Map</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="map-page">
+<nav class="site-nav" aria-label="Main navigation">
+  <a class="brand" href="index.html">JR<span>.</span></a>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+  <ul id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="page3.html">Personal</a></li>
+    <li><a href="map.html">Map</a></li>
+  </ul>
+</nav>
+<main class="page-shell">
+  <header class="page-intro">
+    <p class="eyebrow">Map tools</p>
+    <h1>Explore Illinois Tech</h1>
+    <p>This map is centered on the Illinois Institute of Technology campus in Chicago.</p>
+  </header>
+
+  <section class="map-panel">
+    <div class="map-toolbar">
+      <button id="map-style-button" class="action-button" type="button">Change map style</button>
+      <button id="my-location-button" class="action-button secondary-button" type="button">Show my location</button>
+    </div>
+    <div id="map" role="region" aria-label="Google map centered on Illinois Institute of Technology">
+      <p class="map-fallback">The map needs JavaScript and a working Google Maps API key to load.</p>
+    </div>
+    <p id="map-status" class="status-message" aria-live="polite">Map controls will appear when the map loads.</p>
+  </section>
+
+  <section class="content-card">
+    <h2>Questions?</h2>
+    <p>Click the button below if you have questions about this website.</p>
+    <button id="questions-button" class="action-button" type="button">Questions</button>
+  </section>
+</main>
+<footer><p>Jayven Reynolds <span aria-hidden="true">|</span> Map</p></footer>
+
+<!-- The assignment-provided key is included here. Restrict it in Google Cloud Console. -->
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap">
+</script>
+</body>
+</html>
